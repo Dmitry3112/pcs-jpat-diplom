@@ -8,11 +8,10 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 
-import static ru.netology.javacore.Operation.ADD;
-import static ru.netology.javacore.Operation.RESTORE;
-
 public class TodoServer {
-    //...
+    private final int SERVER_PORT;
+    private final Todos taskManager;
+    private final Gson gson;
 
     public TodoServer(int port, Todos todos) {
         this.SERVER_PORT = port;
